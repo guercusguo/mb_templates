@@ -20,15 +20,15 @@ function addSource() {
 }
 // Add a raster non-georeferenced source
 beforeMap.addSource('image_layer', {
-'type': 'image',
-'url': 'path/to/image_layer.gif',
-'coordinates': [
-[-175.407, -21.056], //NW
-[-175.283, -21.056], //SW
-[-175.283, -21.118], //SE
-[-175.407, -21.118] //NE
-//-175.407 W,-21.118 S,-175.283 E,-21.056 N
-]
+	'type': 'image',
+	'url': 'path/to/image_layer.gif',
+	'coordinates': [
+		[-175.407, -21.056], //NW
+		[-175.283, -21.056], //SW
+		[-175.283, -21.118], //SE
+		[-175.407, -21.118] //NE
+		//-175.407 W,-21.118 S,-175.283 E,-21.056 N
+	]
 });
 //END of addSource
 
@@ -57,7 +57,7 @@ function addLayer() {
 			'fill-opacity': 0.3
 		}
 	});
-// Outline
+	// Outline
 	map.addLayer({
 		'id': 'outline_area',
 		'type': 'line',
@@ -71,23 +71,23 @@ function addLayer() {
 			'line-width': 1
 		}
 	});
-// Point geometry with svg/png marker
-map.addLayer({
-	'id': 'point_layer',
-	'type': 'symbol',
-	'layout': {
-		// Make the layer visible by default.
-		'icon-image': 'point-marker',
-		'visibility': 'visible'
-},
-'source': 'ciabot',
-});
-// Add georeferenced layer
-beforeMap.addLayer({
-id: 'image_layer',
-'type': 'raster',
-'source': 'image_layer'
-});
+	// Point geometry with svg/png marker
+	map.addLayer({
+		'id': 'point_layer',
+		'type': 'symbol',
+		'layout': {
+			// Make the layer visible by default.
+			'icon-image': 'point-marker',
+			'visibility': 'visible'
+		},
+		'source': 'ciabot',
+	});
+	// Add georeferenced layer
+	beforeMap.addLayer({
+		id: 'image_layer',
+		'type': 'raster',
+		'source': 'image_layer'
+	});
 });
 // Sky layer for 3D terrain
 map.addLayer({

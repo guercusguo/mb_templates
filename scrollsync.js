@@ -6,7 +6,7 @@ var chapters = {
 		speed: 0.3,
 		pitch: 20
 	}
-// , ...
+	// , ...
 }
 var layerList = document.getElementById('menu');
 var inputs = layerList.getElementsByTagName('input');
