@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Style switch - MapLibre GL JS templates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js" integrity="sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" rel="stylesheet" integrity="sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK" crossorigin="anonymous"/>
+  <link href="example.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="map"></div>
+  <div class="panel">
+    <p><a href="../index.html">&larr; All templates</a></p>
+    <h1>Style switch</h1>
+    <p>The outline is added again after every basemap change.</p>
+    <div id="menu">
+      <div><input id="streets" type="radio" name="rtoggle" checked="checked"> <label for="streets">Streets</label></div>
+      <div><input id="light" type="radio" name="rtoggle"> <label for="light">Light</label></div>
+      <div><input id="dark" type="radio" name="rtoggle"> <label for="dark">Dark</label></div>
+      <div><input id="satellite" type="radio" name="rtoggle"> <label for="satellite">Satellite</label></div>
+    </div>
+  </div>
+  <script src="../js/basemaps.js"></script>
+  <script src="../js/styleswitch.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Scroll sync - MapLibre GL JS templates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js" integrity="sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" rel="stylesheet" integrity="sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK" crossorigin="anonymous"/>
+  <link href="example.css" rel="stylesheet">
+</head>
+
+<body class="scrollsync">
+  <div id="map"></div>
+  <div id="features">
+    <p><a href="../index.html">&larr; All templates</a></p>
+    <section id='first-chapter' class='active'>
+      <h2>First chapter</h2>
+      <p>Scroll down: the map follows the section in the middle of the screen.</p>
+    </section>
+    <section id='second-chapter'>
+      <h2>Second chapter</h2>
+      <p>Each section has a camera position: centre, zoom, pitch and bearing.</p>
+    </section>
+    <section id='third-chapter'>
+      <h2>Third chapter</h2>
+      <p>The active section is fully opaque, the others are dimmed.</p>
+    </section>
+  </div>
+  <script src="../js/basemaps.js"></script>
+  <script src="../js/scrollsync.js"></script>
+</body>
+</html>

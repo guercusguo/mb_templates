@@ -1,0 +1,25 @@
+body {margin: 0; padding: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px;}
+a {text-decoration: none; color: #1a7f72;}
+h1 {font-size: 18px; line-height: 26px; margin: 0 0 6px;}
+h2 {font-size: 16px; margin: 0 0 6px;}
+p {margin: 0 0 8px;}
+#map {position: absolute; top: 0; bottom: 0; width: 100%;}
+.panel {position: absolute; top: 10px; left: 10px; z-index: 2; max-width: 260px; background-color: rgba(255, 255, 255, 0.95); border-radius: 3px; padding: 10px;}
+#fit, #filters input {border: none; border-radius: 3px; padding: 4px 8px; margin: 2px 0; color: #fff; background: #1a3639; cursor: pointer;}
+#filters input.active {background: #dd3497;}
+#slider {width: 100%;}
+#comparison-container {position: absolute; top: 0; bottom: 0; width: 100%; overflow: hidden;}
+.comparemap {position: absolute; top: 0; bottom: 0; width: 100%;}
+.maplibregl-popup {max-width: 400px;}
+body.index {max-width: 720px; margin: 40px auto; padding: 0 16px;}
+body.index li {margin-bottom: 6px;}
+/* scrollsync: fixed map on the left, scrolling text on the right */
+body.scrollsync #map {position: fixed; width: 62vw;}
+body.scrollsync #features {margin-left: 62vw; padding: 10px 2vw; background-color: #fff;}
+body.scrollsync section {min-height: 90vh; padding: 5vh 0; border-bottom: 1px solid #ddd; opacity: 0.25;}
+body.scrollsync section.active {opacity: 1;}
+@media (max-width: 768px) {
+  body.scrollsync #map {width: 100%;}
+  body.scrollsync #features {margin: 0; background-color: transparent;}
+  body.scrollsync section {background-color: rgba(255, 255, 255, 0.95); margin-bottom: 60vh; min-height: 0; padding: 5vw;}
+}

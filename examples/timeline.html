@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Timeline - MapLibre GL JS templates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js" integrity="sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" rel="stylesheet" integrity="sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK" crossorigin="anonymous"/>
+  <link href="example.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="map"></div>
+  <div class="panel">
+    <p><a href="../index.html">&larr; All templates</a></p>
+    <h1>Timeline</h1>
+    <p>Filter the points by year and month.</p>
+    <p><label for="slider">Year: <span id="active-year">2019</span></label></p>
+    <input id="slider" type="range" min="2019" max="2022" step="1" value="2019"/>
+    <div id="filters" role="group" aria-label="Month">
+      <input data-month="1" type="button" value="Jan"/>
+      <input data-month="2" type="button" value="Feb"/>
+      <input data-month="3" type="button" value="Mar"/>
+      <input data-month="10" type="button" value="Oct"/>
+      <input data-month="11" type="button" value="Nov"/>
+      <input data-month="12" type="button" value="Dec"/>
+    </div>
+  </div>
+  <script src="../js/basemaps.js"></script>
+  <script src="../js/timeline.js"></script>
+</body>
+</html>

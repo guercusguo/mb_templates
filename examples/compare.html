@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Compare - MapLibre GL JS templates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js" integrity="sha384-5+cfbwT0iiub6VsQAdn6yz16nr6sDiQoHx6tm4O8OVYXHYOxcffFmCJBL0dgdvGp" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css" rel="stylesheet" integrity="sha384-uTttxo/aOKbdE5RlD/SPzSDoDmNvGlUYPjONi2MN/b7c9HPSvW07OIuyP7uL6jxK" crossorigin="anonymous"/>
+  <script src="https://unpkg.com/@maplibre/maplibre-gl-compare@0.5.0/dist/maplibre-gl-compare.js" integrity="sha384-PbnOMeczeF8frBARf822XaLnOV2gX5rZUyrdmvX9W2asT2JXwHMMxrMoXde4xPlX" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/@maplibre/maplibre-gl-compare@0.5.0/dist/maplibre-gl-compare.css" rel="stylesheet" integrity="sha384-vbzeB7GTxOesw2EO0BuoA3eBVJ1Kpd8tLsD5noYphYjahdM/R1DcY3XgBe/8HKnU" crossorigin="anonymous"/>
+  <link href="example.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="comparison-container">
+    <div id="before" class="comparemap"></div>
+    <div id="after" class="comparemap"></div>
+  </div>
+  <div class="panel">
+    <p><a href="../index.html">&larr; All templates</a></p>
+    <h1>Compare</h1>
+    <p>Drag the handle to compare two basemaps.</p>
+  </div>
+  <script src="../js/basemaps.js"></script>
+  <script src="../js/compare.js"></script>
+</body>
+</html>
